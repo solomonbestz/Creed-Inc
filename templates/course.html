@@ -1,0 +1,77 @@
+{% extends "base.html"%}
+{% block title %}Creed Technologies Incorporation{% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='otherstyle.css') }}">
+{% block content %}
+    <section class="sub-header">
+        <nav>
+            <a href="home"><image src=" {{ url_for('static', filename='imagess/Creedwhite logo.png')}}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="about">PROFILE</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 id="main-header"> Services & MVPs</h1>
+        <p id="header-text">
+            A quick information on services and technical products we can offer you.
+        </p>
+    </section>
+
+    <!-------Courses----->
+
+    <section class="course">
+        <h1>Services we Offer</h1>
+        <p>Technology Oriented Company comprising of the skilled individuals experienced in the development and scalability of softwares, client and user's satisfaction.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3> Software Products</h3>
+                <p> Building and Development of software-based products to solve a particular need of a targeted potential users. <br> We build apps that efficiently function on different platforms and devices, and also effectively improve the standard living
+                    of our users.</p>
+            </div>
+            <div class="course-col">
+                <h3>Consultation and Research</h3>
+                <p> Conducting proper research on how the operation involved in the integration of the developed Technical solution, penetration into the targeted market of users.<br> Customer's Satisfaction and getting feedbacks, chasing leads and also the
+                    availability of personnel for consultation for clients.</p>
+            </div>
+            <div class="course-col">
+                <h3> Skill Acquisition and Training</h3>
+                <p> Orientating and tutoring a community of tech-enthusiasts and curious learners on Software Technology related Concepts,<br> providing them with tools and resources needed for them to build projects and contribute to a tech-enabled Community
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--------facilities---->
+
+    <section class="facilities">
+        <h1>Our MVPS</h1>
+        <p>
+            We have been able to develop high quality technical products to solve the particular need of a targeted high number of potential users.
+        </p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <image src=" {{ url_for('static', filename='imagess/library4.jpg')}}"></image>
+                <h3>E-CAF</h3>
+                <p>OMJ Univerisity is famous for its libraries, and with good reason. The University has incredible collections of books, manuscripts and other materials, many of them housed in beautiful, historic buildings. These resources draw scholars
+                    to the University from all over the world.</p>
+            </div>
+            <div class="facilities-col">
+                <image src=" {{ url_for('static', filename='imagess/basketball5.jpg')}}"></image>
+                <h3>Help.ER</h3>
+                <p>OMJ University is home to the country’s largest concentration of world-class facilities across a wide range of sports</p>
+            </div>
+            <div class="facilities-col">
+                <image src=" {{ url_for('static', filename='imagess/cafeteria4.jpg')}}"></image>
+                <h3>CampusEats</h3>
+                <p>The University cafeteria is open to students, visitors and the public. The menu are delicious, nutricious, healthy and affordable. And serves a broad selection of delicacies that appeal to every taste and dietary restrictions.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

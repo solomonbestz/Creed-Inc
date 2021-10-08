@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Creed Technologies Inc. (Contact){% endblock %}
+{% block content %}
+    <section class="sub-header">
+        <nav>
+            <a href="home"><image src=" {{ url_for('static', filename='imagess/Creedwhite logo.png')}}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="course">SERVICES</a></li>
+                    <li><a href="about">PROFILE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 id="main-header"> Contact Us </h1>
+    </section>
+
+    <!------Contact Us----->
+
+    <!-- <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31716.498239437213!2d3.4535066587909475!3d6.450198251340255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf452da3bd44b%3A0x47331fb41adc9d28!2sLekki%20Phase%201%20106104%2C%20Lekki!5e0!3m2!1sen!2sng!4v1631658116123!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section> -->
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <h3 id="contact-header"><u>Company Information</u></h3>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>creedincorporations@gmail.com</h5>
+                        <p>E-mail us your Feedbacks</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+234 811 625 6294</h5>
+                        <p>We are available for enquiries 24/7</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <input type="email" placeholder="Email Address here..." required>
+                    <input type="text" placeholder="Your Subject..." required>
+                    <textarea rows="8" placeholder=" Feedbacks and complaint here..." required></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}

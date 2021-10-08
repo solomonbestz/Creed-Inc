@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="imagess/Creed black.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='otherstyle.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock %}
+</head>
+
+<body>    
+    {% block content %}{% endblock %}
+
+    <!-------call to action ---->
+    <!--Footer-->
+    <section class="cta">
+        <h1>Making any Enquiries ?<br> We can help quickly with that : </h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+    <!-------Footer ---->
+
+    <section class="footer">
+        <h4>About Us </h4>
+        <p>
+            We are a user-oriented tech Company, fully committed to improving the lives of our users.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Built by Creed Technologies Inc.</p>
+    </section>
+
+
+    <!-------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

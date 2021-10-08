@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+{% block title %}Creed Technologies Inc. (About Us){% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='otherstyle.css') }}">
+{% block content %}
+    <section class="sub-header">
+        <nav>
+            <a href="home"><image src=" {{ url_for('static', filename='imagess/Creedwhite logo.png')}}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="home">HOME</a></li>
+                    <li><a href="course">SERVICES</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 id="main-header">Our Profile</h1>
+        <p id="header-text">Things you need to know about this Company</p>
+    </section>
+
+    <!------About Us----->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1> We are a <br> User-Oriented Tech Company</h1>
+                <p> Creed Technologies Inc. is a leading company<br> heavily invested in improving the quality of lives of Individuals <br>in different communities in Africa. <br>
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                <div class="mission-col">
+                    <h1>Mission</h1><br>
+                    <p>
+                        We are committed to the contribution of a Tech-Friendly eco-system majorly in the Western part of the Sub-saharan Africa. Building large-scalable products that solves problem for a wide range users, training and employing new tech enthusiasts, inventing
+                        creative solutions.
+                    </p>
+                </div>
+                <div class="vision-col">
+                    <h1>Vision</h1>
+                    <p>
+                        Confident to say that the founding core principle of this Technology Company is
+                        <b>Long Term Thinking</b>, We are fully devoted to building products and providing services that serves our users and clients for a long period of time efficiently by iterating and testing additional key features to our process
+                        and making sure we satisfy our users.
+                    </p>
+                </div>
+            </div>
+            <image src=" {{ url_for('static', filename='imagess/about3.jpg')}}"></image>
+        </div>
+    </section>
+{% endblock %}

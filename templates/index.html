@@ -1,0 +1,59 @@
+{% extends "base.html"%}
+{% block title %}Creed Technologies Inc.{% endblock %}
+{% block content %}
+<section class="header">
+    <nav>
+        <a href="imagess/Creedwhite logo.png"><image src=" {{ url_for('static', filename='imagess/Creedwhite logo.png')}}"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="course">SERVICES</a></li>
+                <li><a href="contact">CONTACT</a></li>
+                <li><a href="about">PROFILE</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1 id="main-header">Creed Technologies Inc.</h1>
+        <p id="main-text">Creed Inc. solves user's needs through the building of scalable products.<br> We are invested in improving the quality of lives of our users with the implementation of Technical Products. </p>
+        <a href="" class="hero-btn"> MVPs </a>
+    </div>
+</section>
+<a class="gotopbtn" href="#">🔼</a>
+<!--------- services ------->
+<section class="course">
+    <h1>Services we Offer</h1>
+    <p>
+        Technology Oriented Company comprising of the skilled individuals experienced in the development and scalability of softwares, client and user's satisfaction.
+    </p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3> Software Products</h3>
+            <p>
+                Building and Development of software-based products to solve a particular need of a targeted potential users. <br> We build apps that efficiently function on different platforms and devices, and also effectively improve the standard
+                living of our users.<br>
+            </p>
+        </div>
+        <div class="course-col">
+            <h3> Consultation and Research</h3>
+            <p>
+                Conducting proper research on how the operation involved in the integration of the developed Technical solution, penetration into the targeted market of users.<br> Customer's Satisfaction and getting feedbacks, chasing leads and also
+                the availability of personnel for consultation for clients.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Skill Acquisition and Training</h3>
+            <p>
+                Orientating and tutoring a community of tech-enthusiasts and curious learners on Software Technology related Concepts,<br> providing them with tools and resources needed for them to build projects and contribute to a tech-enabled Community.
+            </p>
+        </div>
+    </div>
+
+
+
+</section>
+{% endblock %}
