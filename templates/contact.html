@@ -50,11 +50,11 @@
                 </div>
             </div>
             <div class="contact-col">
-                <form action="">
-                    <input type="text" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Email Address here..." required>
-                    <input type="text" placeholder="Your Subject..." required>
-                    <textarea rows="8" placeholder=" Feedbacks and complaint here..." required></textarea>
+                <form action="" method="POST">
+                    <input id="name" name="name" type="text" placeholder="Enter Your Name" required>
+                    <input id="email" name="email" type="email" placeholder="Email Address here..." required>
+                    <input id="phone" name="phone" type="tel" placeholder="Your Subject..." required>
+                    <textarea name="message" rows="8" placeholder=" Feedbacks and complaint here..." required></textarea>
                     <button type="submit" class="hero-btn red-btn"> Send Message</button>
                 </form>
             </div>
