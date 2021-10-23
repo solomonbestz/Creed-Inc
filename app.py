@@ -2,6 +2,7 @@ from flask import Flask, redirect, url_for, render_template, request
 from flask_mail import Mail, Message
 import os
 
+
 app = Flask(__name__)
 
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
@@ -41,4 +42,4 @@ def about():
     return render_template("about.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
