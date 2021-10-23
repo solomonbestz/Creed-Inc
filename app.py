@@ -33,6 +33,7 @@ def contact():
 
         msg = Message(subject=f"Mail from {name}", body=f"Name: {name}\nE-Mail: {email}\nPhone: {phone}\n\n\n{message}", sender="davidheroku05@gmail.com", recipients=["davidheroku05@gmail.com"])
         mail.send(msg)
+        return redirect("/")
     return render_template("contact.html")
 
 @app.route("/about")
